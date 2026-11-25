@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://7ajaop1gjjvx"]
+
+[ext_resource type="Script" uid="uid://5ul4qomko0t8" path="res://main.gd" id="1_0xm2m"]
+[ext_resource type="Script" uid="uid://bjm4tt480wr43" path="res://conductor.gd" id="1_ig7tw"]
+[ext_resource type="AudioStream" uid="uid://b5gnv44b4745g" path="res://icy_counters.mp3" id="2_h2yge"]
+
+[node name="Node2D" type="Node2D" unique_id=450857782]
+script = ExtResource("1_0xm2m")
+
+[node name="La Fanfare" type="AudioStreamPlayer" parent="." unique_id=1857886850]
+stream = ExtResource("2_h2yge")
+volume_db = 5.0
+autoplay = true
+script = ExtResource("1_ig7tw")
+bpm = 140
