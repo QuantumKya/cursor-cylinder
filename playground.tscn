@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://crnvuees44eyl"]
+
+[ext_resource type="Script" uid="uid://c77texrvx46v0" path="res://playground.gd" id="1_rupst"]
+[ext_resource type="AudioStream" uid="uid://8pedt7obd8mt" path="res://sfx/pure-tone-A440-sine.wav" id="2_wt17y"]
+
+[node name="Node2D" type="Node2D" unique_id=1367505408]
+script = ExtResource("1_rupst")
+
+[node name="Control" type="Control" parent="." unique_id=1761905579]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="La Fanfare" type="AudioStreamPlayer" parent="." unique_id=1890666032]
+stream = ExtResource("2_wt17y")
+volume_db = 5.0
